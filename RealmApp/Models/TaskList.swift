@@ -8,13 +8,12 @@
 import Foundation
 import RealmSwift
 
-//columns
 class TaskList: Object {
     @Persisted var name = ""
     @Persisted var date = Date()
     @Persisted var tasks = List<Task>()
 }
-//the task column is linked to this table
+
 class Task: Object {
     @Persisted var name = ""
     @Persisted var note = ""
